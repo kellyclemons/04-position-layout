@@ -19,14 +19,18 @@ ul {
   list-style: none;
 }
 
+img {
+  max-width: 100%;
+}
+
 /*** BACKGROUND IMAGE ***/
 
 
 
 .overall-image {
-  background: url("http://wallpaper-gallery.net/images/image-background/image-background-14.jpg");
+  background: url("https://media.playstation.com/is/image/SCEA/overwatch-origins-edition-screen-05-ps4-us-03mar16?$MediaCarousel_Original$");
   min-height: 100vh;
-  margin: 0;
+  overflow: auto;
 }
 
 
@@ -40,14 +44,15 @@ ul {
 }
 
 .character-stats {
-  margin: 0;
-  background: red;
-  border: 5px solid black;
+  position: fixed;
+  bottom: 1%;
+  line-height: 1rem;
+  margin-left: 1rem;
+  margin-bottom: 1rem;
 }
 
 .character-avatar {
-  border: 1rem solid blue;
-  border-radius: 60%;
+
 }
 
 .character-item {
@@ -73,31 +78,44 @@ ul {
 }
 
 .white {
-  line-height: 1rem;
+  float: left;
+  width: 1rem;
+  height: 2rem;
+  background: rgba(255, 255, 255, 0.75);
   color: white;
+  margin: 0.1rem;
 }
 
 .yellow {
-  line-height: 1rem;
-  color: yellow;
+  float: left;
+  width: 1rem;
+  height: 2rem;
+  background: rgba(255,245,0,.75);
+  margin: 0.1rem;
+
 }
 
 /*** WEAPON STATS (D,E,F,G) ***/
 
 .weapon-stats  {
-
+  float: right;
+  bottom: 1rem;
+  position: fixed;
+  right: 1rem;
+  line-height: 1rem;
 }
 
 .special-move-icons {
-
+  max-width: 2rem;
 }
 
 .special-move-key-bindings {
-
+  max-width: 2rem;
 }
 
 .weapon-image {
-
+  height: 3rem;
+  width: 12rem;
 }
 
 .weapon-ammo-text {
@@ -111,9 +129,30 @@ ul {
 }
 
 .elimination-skull {
-
+  max-width: 2.5rem;
+  top: 50%;
+  right: 50%;
+  left: 50%;
+  bottom: 50%;
+  position: fixed;
+  transform: translate(0, -50%);
 }
 
-.eliminated-enemies {
+.eliminated-text {
+  position: fixed;
+  text-align: center;
+}
 
+.eliminated-enemies_1 {
+  font-style: italic;
+  font-weight: bold;
+}
+
+.eliminated-enemies_2 {
+  font-style: italic;
+  font-weight: bold;
+}
+
+.el-red {
+  color: red;
 }
