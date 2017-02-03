@@ -1,40 +1,92 @@
 html {
   box-sizing: border-box;
+  margin: 0;
 }
 
 body {
   font-size: 1rem;
   box-sizing: border-box;
+  font-family: sans-serif;
+  margin: 0;
 }
 
 *, *:before, *:after {
   box-sizing: inherit;
 }
 
-.overall-image {
-
+ul {
+  padding-left: 0;
+  list-style: none;
 }
 
-/*** CHARACTER STYLING (A,B,C) ***/
+/*** BACKGROUND IMAGE ***/
+
+
+
+.overall-image {
+  background: url("http://wallpaper-gallery.net/images/image-background/image-background-14.jpg");
+  min-height: 100vh;
+  margin: 0;
+}
+
+
+/* next-to places the two boxes (t and search bar) */
+
+
+/*** CHARACTER STATS (A,B,C) ***/
+
+.container {
+  max-height: 100vh;
+}
 
 .character-stats {
-
+  margin: 0;
+  background: red;
+  border: 5px solid black;
 }
 
-.character-img {
+.character-avatar {
+  border: 1rem solid blue;
+  border-radius: 60%;
+}
+
+.character-item {
 
 }
 
 .character-health-text {
-
+  color: white;
+  line-height: 1rem;
+  margin: 1rem;
 }
 
-.character-health-bars {
-  width: 1rem;
-  height; 2rem;
+.big-text {
+  font-size: 2rem;
+}
+
+.blue {
+  color: blue;
+}
+
+.stack > * {
+  display: inline-block;
+}
+
+.white {
+  line-height: 1rem;
+  color: white;
+}
+
+.yellow {
+  line-height: 1rem;
+  color: yellow;
 }
 
 /*** WEAPON STATS (D,E,F,G) ***/
+
+.weapon-stats  {
+
+}
 
 .special-move-icons {
 
@@ -53,6 +105,10 @@ body {
 }
 
 /*** ELIMINATION STATS (H,I) ***/
+
+.elimination-stats {
+
+}
 
 .elimination-skull {
 
