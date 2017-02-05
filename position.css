@@ -1,13 +1,16 @@
 html {
   box-sizing: border-box;
   margin: 0;
+  font-size: 10px;
 }
 
 body {
   font-size: 1rem;
   box-sizing: border-box;
   font-family: sans-serif;
+  font-style: italic;
   margin: 0;
+  color: #fff;
 }
 
 *, *:before, *:after {
@@ -23,12 +26,16 @@ img {
   max-width: 100%;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 /*** BACKGROUND IMAGE ***/
 
 
 
 .overall-image {
-  background: url("https://media.playstation.com/is/image/SCEA/overwatch-origins-edition-screen-05-ps4-us-03mar16?$MediaCarousel_Original$");
+  background: url("https://awesomewallpaper.files.wordpress.com/2013/04/milky-way.jpg");
   min-height: 100vh;
   overflow: auto;
 }
@@ -44,25 +51,24 @@ img {
 }
 
 .character-stats {
-  position: fixed;
+  position: absolute;
   bottom: 1%;
-  line-height: 1rem;
+  line-height: 2rem;
   margin-left: 1rem;
   margin-bottom: 1rem;
 }
 
-.character-avatar {
-
-}
-
-.character-item {
-
+.character-stats > *{
+  float: left;
+  line-height: 2rem;
+  margin-left: 5rem;
+  margin-bottom: 5rem;
 }
 
 .character-health-text {
   color: white;
-  line-height: 1rem;
-  margin: 1rem;
+  line-height: 2rem;
+  margin: 2rem;
 }
 
 .big-text {
@@ -71,6 +77,12 @@ img {
 
 .blue {
   color: blue;
+}
+
+.stack {
+  overflow: auto;
+  margin-right; .5rem;
+  transform: skewX(150deg);
 }
 
 .stack > * {
@@ -97,6 +109,27 @@ img {
 
 /*** WEAPON STATS (D,E,F,G) ***/
 
+.bottom-right {
+  float: left;
+  position: fixed;
+  line-height: 2rem;
+  margin-left: 5rem;
+  margin-bottom: 5rem;
+
+}
+
+.abilities {
+  float: right;
+  bottom: 1rem;
+  position: fixed;
+  right: 1rem;
+  margin-right: 10rem;
+}
+
+.ability-big {
+
+}
+
 .weapon-stats  {
   float: right;
   bottom: 1rem;
@@ -106,16 +139,17 @@ img {
 }
 
 .special-move-icons {
-  max-width: 2rem;
+  height: 5rem;
+  width: 5rem;
 }
 
 .special-move-key-bindings {
-  max-width: 2rem;
+  height: 2rem;
+  width: 2rem;
 }
 
 .weapon-image {
-  height: 3rem;
-  width: 12rem;
+
 }
 
 .weapon-ammo-text {
@@ -129,18 +163,22 @@ img {
 }
 
 .elimination-skull {
-  max-width: 2.5rem;
+  width: 7rem;
   top: 50%;
-  right: 50%;
   left: 50%;
-  bottom: 50%;
+  text-align: center;
   position: fixed;
-  transform: translate(0, -50%);
+  transform: translate(-50%, -50%);
 }
 
 .eliminated-text {
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 4rem;
   position: fixed;
   text-align: center;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .eliminated-enemies_1 {
