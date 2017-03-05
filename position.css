@@ -34,7 +34,8 @@ img {
 /*** BACKGROUND IMAGE ***/
 
 .overall-image {
-  background: url("https://awesomewallpaper.files.wordpress.com/2013/04/milky-way.jpg");
+  background: url("https://blzgdapipro-a.akamaihd.net/media/screenshot/hanamura-screenshot-001.jpg") no-repeat center center fixed;
+  background-size: cover;
   min-height: 100vh;
 }
 
@@ -62,7 +63,7 @@ img {
   margin-bottom: 1rem;
 }
 
-.character-stats>* {
+.character-stats > * {
   float: left;
   line-height: 2rem;
   margin-left: 5rem;
@@ -70,9 +71,14 @@ img {
 }
 
 .character-health-text {
-  position: color: white;
   line-height: 2rem;
   margin: 2rem;
+}
+
+.character-avatar {
+
+  width: 5rem;
+  height: 5rem;
 }
 
 .big-text {
@@ -83,17 +89,16 @@ img {
   color: blue;
 }
 
-.stack {
-  overflow: auto;
-  float: left;
-  position: fixed;
-  margin-right;
-  .5rem;
-  transform: skewX(150deg);
+.character-item {
+  position: relative;
+  width: 30rem;
+  display: inline-bottom;
 }
 
-.stack>* {
-  display: inline-block;
+.stack {
+  position: absolute;
+  transform: skewX(150deg);
+  left: 10rem;
 }
 
 .white {
@@ -130,7 +135,8 @@ img {
   right: 1rem;
   margin-right: 6.5rem;
   /*background: red;*/
-  transform: rotate(5deg);
+  transform: rotate(5deg) translateX(-5rem);
+
 }
 
 .ability-1 {
@@ -157,25 +163,28 @@ img {
 .special-move-icons {
   border-radius: 15%;
   background: white;
-  height: 4rem;
-  width: 4rem;
+  height: 5rem;
+  width: 5rem;
 }
 
 .special-move-key-bindings {
   border-radius: 15%;
   border: 1px solid white;
-  height: 2rem;
-  width: 2rem;
+  height: 3rem;
+  width: 3rem;
 }
 
-.weapon-image {}
+.weapon-image {
+  width: 10rem;
+}
 
-.weapon-ammo-text {}
+.ammo {
+  font-size: 5rem;
+}
 
 
 /*** ELIMINATION STATS (H,I) ***/
 
-.elimination-stats {}
 
 .elimination-skull {
   width: 7rem;
@@ -188,22 +197,24 @@ img {
 
 .eliminated-text {
   font-family: 'Ubuntu', sans-serif;
-  font-size: 4rem;
+  font-size: 6rem;
   position: fixed;
   text-align: center;
   top: 60%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%);
 }
 
 .eliminated-enemies_1 {
   font-style: italic;
   font-weight: bold;
+  margin: 0;
 }
 
 .eliminated-enemies_2 {
   font-style: italic;
   font-weight: bold;
+      margin: 0;
 }
 
 .el-red {
